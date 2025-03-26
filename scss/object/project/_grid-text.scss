@@ -1,0 +1,39 @@
+@use '../../foundation/base' as base;
+
+.p-grid-article {
+    background-color: base.$bg-color-darkbrown;
+    color: base.$font-color-white;
+    padding: 10% 10% 8% 10%;
+}
+
+.p-grid-article-title {
+    @include base.font-rem(24);
+    padding-bottom: 10%
+
+}
+
+.p-grid-article-subheading {
+    @include base.font-rem(20);
+    padding-bottom: 3%
+}
+
+.p-grid-article-text {
+    line-height: 1.7;
+    padding-bottom: 10%;
+    font-weight: 400;
+}
+
+.p-grid-article-link {
+    color: base.$font-color-gray;
+    border-radius: 9999px;
+    background-color: base.$bg-color-white;
+    width: 60%;
+    padding: 3% 7%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p-grid-article-link:hover {
+    opacity: 0.7;
+}

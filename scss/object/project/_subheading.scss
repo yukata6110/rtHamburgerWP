@@ -1,0 +1,15 @@
+@use "../../foundation/base" as base;
+
+.p-subheading {
+    color: base.$font-color-brown;
+    @include base.font-rem(36);
+}
+
+.p-subheading-text {
+    color: base.$font-color-brown;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3% 0 10% 0;
+
+}
+

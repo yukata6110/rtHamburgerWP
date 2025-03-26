@@ -1,0 +1,50 @@
+@use '../../foundation/base' as base;
+
+.p-order {
+    padding: 35% 0 10% 0;
+
+    @include base.breakpoint(tablet) {
+        padding: 15% 0 10% 0;
+    }
+
+    @include base.breakpoint(pc) {
+        padding: 20% 0 7% 0;
+    }
+}
+
+.p-order-takeout {
+    background-image: url(../../../Images/frontpage_takeout.jpg);
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 5% 5% 0 5%;       
+    margin: 5% 5% 0 5%;
+
+    @include base.breakpoint(tablet) {
+        margin: 10% 10% 10% 10%;
+    }
+    
+    @include base.breakpoint(pc) {
+        margin: 0;
+    }
+}
+
+.p-order-eatin {
+    background-image: url(../../../Images/frontpage_eatin.jpg);
+    grid-row: 2/3 ;
+    grid-column: 1/2;
+    padding: 5% 5% 0 5%;
+    margin: 5% 5% 0 5% ;
+
+    @include base.breakpoint(tablet) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin: 10% 10% 10% 10%;
+    }
+
+    @include base.breakpoint(pc) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin: 0;
+    }
+}

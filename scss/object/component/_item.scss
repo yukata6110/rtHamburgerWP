@@ -1,0 +1,12 @@
+@use '../../foundation/base' as base;
+
+.c-item-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include base.breakpoint (pc) {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,61 @@
+@use '../../foundation/base' as base;
+.p-header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    max-width: 600px;
+    position: relative;
+    padding-top: 20px;
+    
+    @include base.breakpoint(pc) {
+        justify-content: flex-end;
+        padding-left: 50%;
+        padding-top: 0;
+        width: 80%;
+        max-width: none;
+    }
+}
+
+.p-header-searchicon {
+    width: 75%;
+}
+
+.p-header-search {
+    width: 100%;  
+    padding-left: 30px;
+    line-height: 2;
+    background-color: base.$bg-color-white;
+    color: base.$font-color-gray;
+    @include base.font-rem(14);
+    text-indent: 1rem;
+}
+
+.p-header-searchicon::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f002';
+    position: absolute;
+    top: 55%;
+    left: 2%;
+
+    @include base.breakpoint(pc) {
+        top: 25%; 
+        left: 63.5%;
+    }
+}
+
+.p-header-submit {
+    width: 25%;
+    height: auto;
+    background-color: color-mix(in srgb, #F2EDE9 100%, #DED8D3 100%);
+    margin-left: 5px;
+    font-family: "M PLUS 1";
+    color: base.$font-color-gray;
+    line-height: 2;
+    @include base.font-rem(14);
+}
+
+.p-header-submit:hover {
+    opacity: 0.7;
+}

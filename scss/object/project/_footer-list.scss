@@ -1,0 +1,32 @@
+@use '../../foundation/base' as base;
+
+.p-footer-about {
+    @include base.font-rem(20);
+    margin-top: 2.5%;
+    margin-bottom: 6%;
+
+    @include base.breakpoint(pc) {
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+}
+
+.p-footer-about-list {
+    display: flex;
+}
+
+.p-footer-about-list-bar::after {
+    content: "|";
+    color: base.$font-color-white;
+    @include base.font-rem(20);
+    padding: 10px;
+    pointer-events: none;
+}
+
+.p-footer-info:hover {
+    opacity: 0.7;
+}
+
+.p-footer-history:hover {
+    opacity: 0.7;
+}

@@ -1,0 +1,77 @@
+@use "../../foundation/base" as base;
+
+.p-pagination {
+    display: none;
+
+    @include base.breakpoint(tablet) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+}
+
+.p-pagination p {
+    @include base.breakpoint(tablet) {
+        margin-right: 12px;
+    }
+    
+}
+
+.p-pagination-number {
+    @include base.breakpoint(tablet) {
+        display: flex;
+        align-items: center;
+        @include base.font-rem(20);
+    }
+}
+
+.p-pagination-number a {
+    color: #707070;
+}
+
+.p-pagination-number-list {
+    @include base.breakpoint(tablet) {
+        display: flex;
+        @include base.font-rem(16);
+    }
+}
+
+.p-pagination-number-list a {
+    color: base.$font-color-gray;
+}
+
+.p-pagination-number-list li {
+    @include base.breakpoint(tablet) {
+        border: 1px solid #707070;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        margin-right: 12px;
+    }
+}
+
+.p-pagination-number-list li:first-child {
+    background-color: base.$bg-color-darkbrown;
+
+    @include base.breakpoint(tablet) {
+        margin-left: 12px;
+    }
+}
+
+.p-pagination-number-list li:first-child a {
+    color: base.$font-color-white;
+}
+
+.p-pagination-number-list li:hover {
+    @include base.breakpoint(tablet) {
+        background-color: base.$bg-color-darkbrown;
+        
+        a {
+            color: base.$font-color-white;
+        }
+    }
+}
+
+
+

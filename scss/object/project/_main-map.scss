@@ -1,0 +1,29 @@
+@use '../../foundation/base' as base;
+
+.p-main-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -200;
+    width: 100%;
+    height: 100%;
+    background-color: base.$bg-color-black;
+
+    & iframe {
+        aspect-ratio: 691/375;
+        object-fit: cover;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        opacity: 0.5971;
+
+        @include base.breakpoint(tablet) {
+            aspect-ratio: 1653/649;
+        }
+
+        @include base.breakpoint(pc) {
+            aspect-ratio: 1653/649;
+        }
+    }
+}

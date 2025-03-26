@@ -1,0 +1,99 @@
+@use "sass:math";
+
+/*Foundation*/
+
+body {
+    font-family: "M PLUS 1"/*, "Roboto", sans-serif*/;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    color: #707070;
+    height: 100%;
+    overflow-x: clip;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+p {
+    margin: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*mixin*/
+/*breakpoint*/
+
+@mixin breakpoint($point) {
+    @if $point==sp {
+        @media (min-width: 375px) {
+            @content;
+        }
+    }
+
+    @if $point==tablet {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $point==pc {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    }
+}
+
+/*font-size*/
+@mixin font-rem($font-size-px, $root-font-size:16) {
+    font-size: math.div( ($font-size-px*1rem), $root-font-size);
+}
+
+/*文字の色*/
+
+$font-color-gray: #707070;
+
+$font-color-lightGray: #EAEAEA;
+
+$font-color-white: #FFFFFF;
+
+$font-color-brown: #3c2A10;
+
+/*背景色*/
+$bg-color-beige1: #FFF7EF;
+
+$bg-color-beige2: #F2ede9;
+
+$bg-color-white: #FFFFFF;
+
+$bg-color-black: #000000;
+
+$bg-color-brown: #9D8670;
+
+$bg-color-darkbrown: #3c2b1c;
+
+$bg-color-gray: #707070;
+
+$bg-color-whitesmoke: #F5F5F5;
+
+
+

@@ -1,0 +1,54 @@
+/*Foundation*/
+@use "../css/ress.css";
+@use "foundation/base";
+@use "foundation/fontawasome";
+
+/*layout*/
+@use "layout/footer";
+@use "layout/header";
+@use "layout/main";
+@use "layout/sidebar";
+
+/*object/component*/
+@use "object/component/image";
+@use "object/component/box";
+@use "object/component/item";
+@use "object/component/fontfam";
+@use "object/component/grid";
+@use "object/component/flex";
+@use "object/component/line";
+@use "object/component/container";
+@use "object/component/wrapper";
+@use "object/component/inner";
+@use "object/component/section";
+@use "object/component/c-eyecatch";
+
+/*object/project*/
+@use "object/project/header" as h;
+@use "object/project/main" as m;    
+@use "object/project/footer" as f;
+@use "object/project/sidebar" as s;
+@use "object/project/search-form";
+@use "object/project/main-order";
+@use "object/project/main-map";
+@use "object/project/btn";
+@use "object/project/sidebar-move";
+@use "object/project/archive-image";
+@use "object/project/subheading";
+@use "object/project/grid-text";
+@use "object/project/grid-img";
+@use "object/project/pagination";
+@use "object/project/pagination-sp";
+@use "object/project/single-image";
+@use "object/project/single-article";
+@use "object/project/blockquote";
+@use "object/project/single-grid";
+@use "object/project/single-list";
+@use "object/project/single-code";
+@use "object/project/single-table";
+@use "object/project/single-btn";
+@use "object/project/single-bold";
+@use "object/project/footer-list";
+@use "object/project/footer-copyright";
+@use "object/project/sidebar-list";
+

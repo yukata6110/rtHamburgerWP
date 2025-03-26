@@ -1,0 +1,10 @@
+@use '../../foundation/base' as base;
+
+.p-footer-copyright {
+    margin-bottom: 3%;
+    @include base.font-rem(14);
+
+    @include base.breakpoint(pc) {
+        margin-bottom: 1%;
+    }
+}

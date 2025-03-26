@@ -1,0 +1,35 @@
+@use '../../foundation/base' as base;
+
+.p-single-image-hamburger {
+    aspect-ratio: 1353/500;
+    object-position: 50% 78%;
+    
+}
+
+.p-single-image-hamburger-small {
+    text-align: center;
+    margin-bottom: 0;
+    
+    @include base.breakpoint(tablet) {
+        margin-bottom: 20%;
+    }
+
+    @include base.breakpoint(pc) {
+        margin-bottom: 0;
+    }
+
+    img {
+        aspect-ratio: 581/358;
+        width: calc( 267px / 375px * 100%) ;
+
+        @include base.breakpoint(tablet) {
+            width: calc( 581px / 834px * 100%) ;
+        }
+
+        @include base.breakpoint(pc) {
+            width: calc( 581px / 1353px * 100%) ;
+        }
+    }
+    
+}
+

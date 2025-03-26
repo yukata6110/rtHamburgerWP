@@ -1,0 +1,21 @@
+@use '../../foundation/base' as base;
+
+.p-single-list {
+    padding-bottom: 1%;
+    font-weight: 400;
+
+    @include base.breakpoint(tablet) {
+        padding-left: 7%;
+    }
+}
+
+.p-single-list2 {
+    padding-left: 2%;
+    padding-bottom: 1%;
+    font-weight: 400;
+
+    @include base.breakpoint(tablet) {
+        padding-left: 9%;
+    }
+}
+

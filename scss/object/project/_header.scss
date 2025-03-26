@@ -1,0 +1,17 @@
+@use '../../foundation/base' as base;
+
+.p-header {
+    padding-left: 4%;
+    padding-right: 2%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.p-header-logo {
+    @include base.font-rem(32);
+    text-align: center;
+    
+    @include base.breakpoint(pc) {
+        text-align: left;
+    }
+}

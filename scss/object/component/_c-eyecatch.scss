@@ -1,0 +1,53 @@
+@use '../../foundation/base' as base;
+
+.c-eyecatch-title-mv1{
+    color: base.$font-color-white;
+    @include base.font-rem(38);
+    padding-top: 33%;
+    padding-left: 8%;
+    
+
+    @include base.breakpoint(tablet) {
+        @include base.font-rem(44);
+        padding-top: 13%;
+    }
+
+    @include base.breakpoint(pc) {
+        @include base.font-rem(48);
+        padding-left: 5%;
+    }
+}
+
+.c-eyecatch-title-mv2{
+    color: base.$font-color-white;
+    @include base.font-rem(50);
+    padding-top: 5%;
+    padding-left: 5%;
+
+    @include base.breakpoint(tablet) {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+
+    @include base.breakpoint(pc) {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+}
+
+.c-eyecatch-title-mv3{
+    color: base.$font-color-white;
+    @include base.font-rem(38);
+    padding-top: 25%;
+    padding-left: 8%;
+    
+
+    @include base.breakpoint(tablet) {
+        @include base.font-rem(50);
+    }
+
+    @include base.breakpoint(pc) {
+        padding-top: 12%;
+        padding-left: 5%;
+    }
+}

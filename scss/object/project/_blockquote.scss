@@ -1,0 +1,20 @@
+@use '../../foundation/base' as base;
+
+.p-blockquote {
+    background-color: base.$bg-color-whitesmoke;
+    padding: 3% 4% 5% 3%;
+    font-weight: 400;
+    margin-bottom: 5%;
+    
+    cite {
+        font-style: normal;
+
+        a {
+            text-decoration: underline #4A6C9B 1px;
+        }
+    }
+
+    cite a:hover {
+        opacity: 0.7;
+    }
+}

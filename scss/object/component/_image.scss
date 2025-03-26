@@ -1,0 +1,74 @@
+@use '../../foundation/base' as base;
+
+.c-image-mv {
+    position: relative;
+}
+
+/*front*/
+.c-image-mv1 {
+    aspect-ratio: 375/285;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: -100;
+    top:0;
+    
+    @include base.breakpoint(tablet) {
+        aspect-ratio: 834/285;
+    }
+
+    @include base.breakpoint(pc) {
+        aspect-ratio: 1553/530;
+    }
+}
+
+/*archiveとarchive-search*/
+.c-image-mv2 {
+    aspect-ratio: 375/285;
+    background-size: cover;
+    background-position: center;
+
+
+    @include base.breakpoint(tablet) {
+        aspect-ratio: 834/285;
+    }
+
+    @include base.breakpoint(pc) {
+        aspect-ratio: 1553/239;
+    }
+}
+
+/*singleとpage*/
+.c-image-mv3 {
+    aspect-ratio: 375/225;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: -100;
+    top:0;
+
+    @include base.breakpoint(tablet) {
+        aspect-ratio: 834/505;
+    }
+
+    @include base.breakpoint(pc) {
+        aspect-ratio: 1553/500;
+    }
+}
+
+/*ftontpageのmain*/
+.c-bg-Image-order {
+    aspect-ratio: 335/642;
+    background-size: cover;
+    background-position: center;
+
+    @include base.breakpoint(tablet) {
+        aspect-ratio: 357/681;
+    }
+
+    @include base.breakpoint(pc) {
+        aspect-ratio: 616/1197;
+    }
+}
+
+

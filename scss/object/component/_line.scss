@@ -1,0 +1,29 @@
+@use '../../foundation/base' as base;
+
+.c-line-headingUnderline {
+    position: relative;
+}
+
+.c-line-headingUnderline::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: base.$bg-color-white;
+    top: 120px;
+    left: 0;
+}
+
+.c-line-headingUnderlineLong {
+    position: relative;
+}
+
+.c-line-headingUnderlineLong::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: base.$bg-color-white;
+    top: 80px;
+    left: 0;
+}

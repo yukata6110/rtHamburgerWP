@@ -1,0 +1,7 @@
+@use '../../foundation/base' as base;
+
+.p-single-code {
+    background-color: base.$bg-color-whitesmoke;
+    white-space-collapse: preserve-breaks;
+    padding: 5%;
+}

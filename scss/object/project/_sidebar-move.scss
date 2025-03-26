@@ -1,0 +1,71 @@
+@use '../../foundation/base' as base;
+
+
+/*サイドバーでている時、コンテンツはスクロールしない*/
+.js-body-scroll {
+    overflow: hidden;
+}
+
+/*jsでサイドバーオープン・クローズ*/
+/*隠れている状態*/
+.js-sidebar {
+    transform: translateX(0);
+    overflow: hidden;
+    position: fixed; 
+    background-color: base.$bg-color-beige1; 
+    z-index: 200;
+    top:0;
+    bottom: 0;
+    transition: 1s;
+
+    @include base.breakpoint(pc) {
+        position: static;
+        background-color: base.$bg-color-beige2;
+        transition: none;
+    }
+}
+
+/*開いた状態*/
+.js-sidebar-open {
+    transform: translateX(-100%);
+    width: 90vw;
+    /*サイドバーのみスクロールできる*/
+    overflow: auto;
+
+    @include base.breakpoint(tablet) {
+        width: 45vw;
+    }
+}
+
+/*MENUクリック前のopenBg*/
+.js-sidebar-bg {
+    position: relative;   
+}
+
+.js-sidebar-bg::before {
+    background-color: base.$bg-color-black;
+    content: "";
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left:0;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+/*サイドバー出てきたときの背景グレーになる*/
+.js-sidebar-openBg {
+    position: relative;    
+}
+
+.js-sidebar-openBg::before {
+    opacity: 0.2855;
+    visibility: visible;
+    transition: opacity 1s, visibility 1s;
+}
+
+
+

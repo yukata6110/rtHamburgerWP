@@ -1,0 +1,16 @@
+@use '../../foundation/base' as base;
+
+.c-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    @include base.breakpoint(sp) {
+        width: 100%;
+    }
+
+    @include base.breakpoint(tablet) {
+        width: 100%;
+
+    }
+}

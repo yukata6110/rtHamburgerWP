@@ -1,0 +1,33 @@
+@use '../../foundation/base' as base;
+
+.p-single-article {
+    color: base.$font-color-brown;
+
+    p {
+        font-weight: 400;
+    }
+
+    h2 {
+        padding-top: 33%;
+        
+        @include base.breakpoint(pc) {
+            padding-top: 17%;
+        }
+    }
+    
+    p,h2,h3,h4,h5,h6 {
+        padding-bottom: 5%;
+    }
+}
+
+.p-single-article h2 {
+    @include base.font-rem(36);
+}
+
+.p-single-article h3 {
+    @include base.font-rem(28);
+}
+
+.p-single-article h4 h5 h6{
+    @include base.font-rem(20);
+}

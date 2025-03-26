@@ -1,0 +1,131 @@
+/*
+@use '../../foundation/base' as base;
+
+.p-sidebar {
+    position: relative;    
+}
+
+
+.p-sidebar-title {
+    position: absolute;
+    top: 0.5%;
+    left: -90px;
+
+    @include base.breakpoint(pc){
+        position: static;
+        background-color: base.$bg-color-beige2;
+        padding-top: 24%;
+        padding-bottom: 15%;
+        padding-left: 10%;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    & h2 {
+        @include base.font-rem(24);
+    }
+}
+
+.p-sidebar-btn-menu {
+    color: base.$font-color-gray;
+
+    @include base.breakpoint(pc) {
+        pointer-events: none;
+    }
+}
+
+*/
+
+/*sidebar-listに分けた部分を戻す*/
+@use '../../foundation/base' as base;
+
+.p-sidebar {
+    position: relative;    
+}
+
+
+.p-sidebar-title {
+    position: absolute;
+    top: 0.5%;
+    left: -90px;
+
+    @include base.breakpoint(pc){
+        position: static;
+        background-color: base.$bg-color-beige2;
+        padding-top: 24%;
+        padding-bottom: 15%;
+        padding-left: 10%;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    & h2 {
+        @include base.font-rem(24);
+    }
+}
+
+.p-sidebar-btn-menu {
+    color: base.$font-color-gray;
+
+    @include base.breakpoint(pc) {
+        pointer-events: none;
+    }
+}
+
+.p-sidebar-list {
+    position: absolute;
+
+    & a {
+        color: base.$font-color-gray;
+    }
+    
+    @include base.breakpoint(pc) {
+        position: static;
+        display: block;
+        background-color: base.$bg-color-beige2;
+        height: 100%;
+    }
+}
+
+.p-sidebar-list a:hover {
+    opacity: 0.7;
+}
+
+.p-sidebar-wrap {
+    margin-top: 40%;
+    
+    @include base.breakpoint(pc) {
+        margin-top: 0;
+    }
+}
+
+.p-sidebar-menu {
+    padding: 5% 10% 5% 10%;
+}
+
+.p-sidebar-menu-category {
+    display: block;
+    margin-bottom: 15%;
+    @include base.font-rem(36);
+
+    @include base.breakpoint(pc) {
+        margin-top: 0;
+        margin-bottom: 10%;
+        @include base.font-rem(24);
+    }
+
+}
+
+.p-sidebar-menu-choice {
+    margin-left: 5%;
+    @include base.font-rem(30);
+    font-weight: 400;
+
+    @include base.breakpoint(pc) {
+        @include base.font-rem(20);
+    }
+}
+
+.p-sidebar-menu-choice-child {
+    margin-bottom: 8%;
+}

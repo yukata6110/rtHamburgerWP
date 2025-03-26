@@ -1,0 +1,68 @@
+@use '../../foundation/base' as base;
+
+/*main部分のテキスト関係*/
+.p-main-title {
+    color: base.$font-color-white;
+    @include base.font-rem(64);
+}
+
+.p-main-list {
+    margin-top: 60%;
+    justify-content: flex-end;
+}
+
+.p-main-textbox {
+    color: base.$font-color-brown;
+    background-color: rgba(base.$bg-color-white, 0.8);
+    margin-bottom: 5%;
+    padding: 3% 5% 5% 3%;
+    
+    & dt {
+        margin-bottom: 1%;
+        @include base.font-rem(24);
+        line-height: 2;
+    }
+
+    & dd {
+        font-weight: 400;
+        line-height: 1.7;
+    }
+}
+
+/*下部分：テキストと地図*/
+.p-main-section {
+    position: relative;
+    width: 100%;
+}
+
+.p-main-section-text {
+    width: 100%;
+    color: base.$font-color-white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2855) 50%, transparent 50%);
+    padding: 7%;
+    
+
+    @include base.breakpoint(tablet) {
+        width: 100%;
+        padding: 5%;
+        background-image:none;
+        background-color: rgba(base.$bg-color-black, 0.2855);
+    }
+
+    @include base.breakpoint(pc) {
+        width: 60%;
+        padding: 5%;
+        background-image:none;
+        background-color: rgba(base.$bg-color-black, 0.2855);
+    }
+
+    & h2 {
+        @include base.font-rem(36);
+        margin-bottom: 8%;
+    }
+
+    & p {
+        @include base.font-rem(16);
+        line-height: 2.5;
+    }
+}

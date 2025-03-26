@@ -1,0 +1,40 @@
+@use '../../foundation/base' as base;
+
+.p-single-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    background-color: base.$bg-color-white;
+}
+
+.p-single-table td {
+    border: solid 1px #707070;
+    border-bottom: none;
+    font-weight: 400;
+    padding: 4%;
+
+    @include base.breakpoint(tablet){
+        padding: 2%;
+    }
+}
+
+.p-single-table-row {
+    display: table;
+    width: 100%;
+}
+
+.p-single-table-row:last-child td {
+    border-bottom: solid 1px #707070;
+}
+
+
+.p-single-table-data:nth-child(1) {
+    width: 33%;
+}
+
+.p-single-table-data:nth-child(2) {
+    width: 67%;
+}
+
+
+

@@ -1,0 +1,28 @@
+
+.c-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.c-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*flex下書き →これやめてc-innerやってみる？*/
+
+.c-flex {
+    display: flex;
+}
+
+.c-flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-flex-justify-center {
+    display: flex;
+    justify-content: center;
+}

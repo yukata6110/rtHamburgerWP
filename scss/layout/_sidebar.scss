@@ -1,0 +1,12 @@
+@use '../foundation/base' as base;
+
+.l-sidebar {
+    width: 0;
+
+    @include base.breakpoint(pc) {
+        width: 20%;
+    }
+}
+
+
+

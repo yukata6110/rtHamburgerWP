@@ -1,0 +1,14 @@
+@use '../../foundation/base' as base;
+
+.c-wrapper {
+    width: calc(1553px / 1921px*100%);
+    height: 100%;
+
+    @include base.breakpoint(sp) {
+        width: 100%;
+    }
+
+    @include base.breakpoint(tablet) {
+        width: 100%;
+    }
+}

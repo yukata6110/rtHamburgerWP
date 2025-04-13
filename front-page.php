@@ -1,7 +1,7 @@
 <?php get_header(); ?>
                 <main class="l-main c-image-mv">
                     <h1 class="c-eyecatch-title-mv1">ダミーサイト</h1>
-                    <div><img class="c-image-mv1" src="Images/frontpage_eyecatch.png" alt="フロントページのアイキャッチ画像"></div>
+                    <div><img class="c-image-mv1" src="<?php echo get_template_directory_uri(); ?>/Images/frontpage_eyecatch.png" alt="フロントページのアイキャッチ画像"></div>
                     <article >
                         <ul class="l-order p-order c-grid-container-frontMain">
                             <li class="c-bg-Image-order c-grid-item-frontMain p-order-takeout"> 
